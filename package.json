@@ -1,0 +1,14 @@
+{
+  "name": "api_express_g17_tup_utn",
+  "version": "1.0.0",
+  "description": "inicializacion del proyecto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Miqueas Correa, Wanda Suarez, Brenda Yañez, Matias Dittler",
+  "license": "ISC",
+  "dependencies": {
+    "api_express_g17_tup_utn": "file:"
+  }
+}
