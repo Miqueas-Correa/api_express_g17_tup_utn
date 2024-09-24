@@ -4,11 +4,25 @@
   "description": "inicializacion del proyecto",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node App.js",
+    "lint": "npx standard",
+    "lint:fix": "npx standard --fix",
+    "prepare": "husky"
   },
   "author": "Miqueas Correa, Wanda Suarez, Brenda Yañez, Matias Dittler",
   "license": "ISC",
   "dependencies": {
-    "api_express_g17_tup_utn": "file:"
+    "api_express_g17_tup_utn": "file:",
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "husky": "^9.1.6",
+    "standard": "^17.1.2"
+  },
+  "eslintConfig": {
+    "extends": "standard"
   }
 }
