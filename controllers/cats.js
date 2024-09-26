@@ -1,6 +1,19 @@
 const axios = require('axios')
 const { request, response } = require('express')
 
+// URL CATS:
+// * URL de busqueda especifica de mis endpoints:
+// * http://localhost:3000/api/v1/cats
+// * http://localhost:3000/api/v1/cats/55
+// * http://localhost:3000/api/v1/cats/cazador/false
+// * http://localhost:3000/api/v1/cats/color/blue
+
+// * QUERY PARAMS:
+// * http://localhost:3000/api/v1/cats?color=blue
+// * http://localhost:3000/api/v1/cats?color=blue&id=21
+// * http://localhost:3000/api/v1/cats?nombre=pietro&id=21
+// * http://localhost:3000/api/v1/cats?cazador=true&id=21
+
 // Endpoint--> todo muestra
 const getCats = async (req = request, res = response) => {
   const { id = '', raza = '', nombre = '', fechaNacimiento = '', color = '', cazador = '' } = req.query
