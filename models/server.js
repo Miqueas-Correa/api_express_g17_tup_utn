@@ -14,9 +14,10 @@ class Server {
 
   rutas () {
     this.app.use('/api/v1/dogs', require('../routes/dogs')) // Miqueas Correa
+    // Establece el punto de entrada para las rutas de cocodrilos, todas las solicitudes que comienzan con '/api/v1/crocodiles' serán gestionadas por el archivo de rutas '../routes/crocodiles'.
+    this.app.use('/api/v1/crocodiles', require('../routes/crocodiles')) // Matias Emanuel Coronel Dittler
     this.app.use('/api/v1/cats', require('../routes/cats')) // Wanda Suarez
     this.app.use('/api/v1/peces', require('../routes/peces')) // Brenda Yañez
-
   }
 
   listen () {
