@@ -8,8 +8,8 @@
 # http://localhost:3000/api/v1/crocodiles
 # http://localhost:3000/api/v1/crocodiles/1
 # http://localhost:3000/api/v1/crocodiles/name/Orinoco Crocodile
-# http://localhost:3000/api/v1/crocodile/color/silver
-# http://localhost:3000/api/v1/crocodile/habitat/Luxembourg
+# http://localhost:3000/api/v1/crocodiles/color/silver
+# http://localhost:3000/api/v1/crocodiles/habitat/Luxembourg
 
 # QUERY PARAMS CROCODILES:
 # http://localhost:3000/api/v1/crocodiles?name=Orinoco Crocodile
@@ -46,6 +46,7 @@
 # Rutas Brenda
 # URL PECES:
 # URL de busqueda especifica de mis endpoints:
+# http://localhost:3000/api/v1/peces
 # http://localhost:3000/api/v1/peces/tan                                                                         
 # http://localhost:3000/api/v1/peces/id/5
 # http://localhost:3000/api/v1/peces/especie/Bombay-duck
