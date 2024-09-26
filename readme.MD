@@ -39,7 +39,7 @@
 
 # QUERY PARAMS DOGS:
 # http://localhost:3000/api/v1/dogs?raza=akita
-# http://localhost:3000/api/v1/dogs?fechaNacimiento=1999-2-20
+# http://localhost:3000/api/v1/dogs?fecha_nacimiento=1999-2-20
 # http://localhost:3000/api/v1/dogs?name=Alex
 
 
