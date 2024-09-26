@@ -40,14 +40,14 @@ const getPeces = (req = request, res = response) => {
         msg: 'Se ha mostrado con exito.',
         data: filteredData
       })
-    })
-    .catch((error) => {
-      console.log(error)
+        .catch((error) => {
+          console.log(error)
 
-      res.status(404).json({
-        msg: 'No se ha podido mostrar.',
-        error: 'La API no cuenta con esos datos disponibles.'
-      })
+          res.status(400).json({
+            msg: 'No se ha podido mostrar.',
+            error
+          })
+        })
     })
 }
 
@@ -64,14 +64,14 @@ const getPezByColor = (req = request, res = response) => {
         msg: 'Se ha mostrado con exito.',
         data
       })
-    })
-    .catch((error) => {
-      console.log(error)
+        .catch((error) => {
+          console.log(error)
 
-      res.status(400).json({
-        msg: 'No se ha podido mostrar.',
-        error: 'Lo siento, no se ha podido buscar ese parametro.'
-      })
+          res.status(400).json({
+            msg: 'No se ha podido mostrar.',
+            error
+          })
+        })
     })
 }
 

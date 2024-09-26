@@ -2,7 +2,7 @@
   "name": "api_express_g17_tup_utn",
   "version": "1.0.0",
   "description": "inicializacion del proyecto",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node App.js",
