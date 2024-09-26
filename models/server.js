@@ -14,6 +14,7 @@ class Server {
 
   rutas () {
     this.app.use('/api/v1/dogs', require('../routes/dogs')) // Miqueas Correa
+    this.app.use('/api/v1/crocodiles', require('../routes/crocodiles')) // Matias Emanuel Coronel Dittler
   }
 
   listen () {
