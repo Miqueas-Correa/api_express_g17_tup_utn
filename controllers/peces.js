@@ -44,9 +44,9 @@ const getPeces = (req = request, res = response) => {
     .catch((error) => {
       console.log(error)
 
-      res.status(400).json({
+      res.status(404).json({
         msg: 'No se ha podido mostrar.',
-        error
+        error: 'La API no cuenta con esos datos disponibles.'
       })
     })
 }
@@ -70,7 +70,7 @@ const getPezByColor = (req = request, res = response) => {
 
       res.status(400).json({
         msg: 'No se ha podido mostrar.',
-        error
+        error: 'Lo siento, no se ha podido buscar ese parametro.'
       })
     })
 }
