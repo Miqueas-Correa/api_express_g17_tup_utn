@@ -8,7 +8,7 @@
 # http://localhost:3000/api/v1/crocodiles
 # http://localhost:3000/api/v1/crocodiles/1
 # http://localhost:3000/api/v1/crocodiles/name/Orinoco Crocodile
-# http://localhost:3000/api/v1/crocodile/color/silver
+# http://localhost:3000/api/v1/crocodiles/color/silver
 # http://localhost:3000/api/v1/crocodiles/habitat/India
 
 # QUERY PARAMS CROCODILES:
