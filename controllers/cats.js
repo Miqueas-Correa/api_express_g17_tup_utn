@@ -16,7 +16,7 @@ const getCats = async (req = request, res = response) => {
       const Nombre = nombre ? cat.nombre.toLowerCase() === nombre.toLowerCase() : true
       const FechaNacimiento = fechaNacimiento ? cat.fechaNacimiento === fechaNacimiento : true
       const Color = color ? cat.color.toLowerCase() === color.toLowerCase() : true
-      const Cazador = cazador ? cat.cazador.toLowerCase() === cazador.toLowerCase() : true
+      const Cazador = cazador ? String(cat.cazador) === cazador : true
 
       // retorno verdadero si tods coinciden
       return Id && Raza && Nombre && FechaNacimiento && Color && Cazador
