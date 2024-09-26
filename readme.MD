@@ -9,12 +9,12 @@
 # http://localhost:3000/api/v1/crocodiles/1
 # http://localhost:3000/api/v1/crocodiles/name/Orinoco Crocodile
 # http://localhost:3000/api/v1/crocodiles/color/silver
-# http://localhost:3000/api/v1/crocodiles/habitat/Luxembourg
+# http://localhost:3000/api/v1/crocodiles/habitat/India
 
 # QUERY PARAMS CROCODILES:
 # http://localhost:3000/api/v1/crocodiles?name=Orinoco Crocodile
 # http://localhost:3000/api/v1/crocodiles?color=silver
-# http://localhost:3000/api/v1/crocodiles?habitat=Luxebourg
+# http://localhost:3000/api/v1/crocodiles?habitat=India
 
 # Rutas Wanda
 # URL CATS:
