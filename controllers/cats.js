@@ -57,7 +57,7 @@ const getCatE2 = async (req = request, res = response) => {
     const { data } = response
 
     res.status(200).json({
-      msg: 'Gato encontrado por ID, exitosamente!!',
+      msg: 'Ok',
       data
     })
   } catch (error) {
@@ -80,7 +80,7 @@ const getCatE3 = async (req = request, res = response) => {
     const filteredDataCat = data.filter(cat => String(cat.cazador) === cazador)
 
     res.status(200).json({
-      msg: 'Busqueda exitosaa por cazador',
+      msg: 'Ok',
       data: filteredDataCat
     })
   } catch (error) {
@@ -101,7 +101,7 @@ const getCatE4 = async (req = request, res = response) => {
     const { data } = response
 
     res.status(200).json({
-      msg: 'Busqueda exitosaa por colorr',
+      msg: 'Ok',
       data
     })
   } catch (error) {
