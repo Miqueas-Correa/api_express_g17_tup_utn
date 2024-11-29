@@ -36,7 +36,7 @@ const getCats = async (req = request, res = response) => {
     })
 
     res.status(200).json({ // devuelvo respues de ok si se filtran los gatos
-      msg: 'Busqueda exitosaaaa!',
+      msg: 'Ok',
       data: filterDataCat
     })
   } catch (error) { // manejo el error
