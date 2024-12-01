@@ -1,7 +1,7 @@
 const axios = require('axios')
 const { request, response } = require('express')
 
-const urlAPI = 'https://66f21a344153791915530b67.mockapi.io/api/v1/peces'
+const urlAPI = 'https://66f21a344153791915530b67.mockapi.io/api/v1/peces/'
 
 /* Query Params */
 const getPeces = (req = request, res = response) => {
