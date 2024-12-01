@@ -50,7 +50,7 @@ const getCats = async (req = request, res = response) => {
 
 // Endpoint--> id
 const getCatE2 = async (req = request, res = response) => {
-  const { id } = req.params // extraigo el id de los parametro de la solicirudes
+  const { id } = req.params // extraigo el id de los parametro de la solicirudess
 
   try {
     const response = await axios.get(`https://66f21e0f415379191553149f.mockapi.io/api/v1/gatitosss/${id}`)

@@ -161,6 +161,6 @@ module.exports = {
   getPez,
   // getPezByColor,
   getPezByEspecie,
-  getPezByNombre,
+  getPezByNombre
   // getPezByID
 }

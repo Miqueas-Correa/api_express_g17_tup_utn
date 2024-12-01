@@ -1,5 +1,5 @@
 const { Router } = require('express')
-const { getPeces, getPez, /*getPezByColor*/ getPezByEspecie, getPezByNombre, /*getPezByID*/ } = require('../controllers/peces')
+const { getPeces, getPez, getPezByEspecie, getPezByNombre } = require('../controllers/peces')
 
 const rutas = Router()
 
