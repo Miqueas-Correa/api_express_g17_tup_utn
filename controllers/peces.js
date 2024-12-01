@@ -1,10 +1,12 @@
 const axios = require('axios')
 const { request, response } = require('express')
 
+const urlAPI = 'https://66f21a344153791915530b67.mockapi.io/api/v1/peces'
+
 /* Query Params */
 const getPeces = (req = request, res = response) => {
-  const { id = '', especie = '', nombre = '', color = '' } = req.query
-  console.log(id, especie, nombre, color)
+  const { id = '', especie = '', nombre = '', color = '', avatar = '', favorite = '' } = req.query
+  console.log(id, especie, nombre, color, avatar, favorite)
 
   const params = new URLSearchParams()
 
@@ -12,16 +14,17 @@ const getPeces = (req = request, res = response) => {
   if (especie) params.append('especie', especie)
   if (nombre) params.append('nombre', nombre)
   if (color) params.append('color', color)
+  if (avatar) params.append('avatar', avatar)
+  if (favorite) params.append('favorite', favorite)
 
   const filtro = params.toString() ? `?${params.toString()}` : ''
 
-  axios.get(`https://66f21a344153791915530b67.mockapi.io/api/v1/peces${filtro}`)
+  axios.get(urlAPI + filtro)
     .then((response) => {
-      console.log(response)
       const { data = [] } = response
 
       res.status(200).json({
-        msg: 'Se ha mostrado con exito.',
+        msg: 'Ok',
         data
       })
     })
@@ -40,9 +43,10 @@ const getPez = (req = request, res = response) => {
   const { id = '' } = req.params
   console.log(id)
 
-  axios.get(`https://66f21a344153791915530b67.mockapi.io/api/v1/peces${id}`)
+  axios.get(`${urlAPI}${id}`)
     .then((response) => {
       const { data } = response
+
       res.status(200).json({
         msg: 'Ok',
         data
@@ -86,7 +90,7 @@ const getPezByEspecie = (req = request, res = response) => {
   const { especiePez } = req.params
   console.log(especiePez)
 
-  axios.get(`https://66f21a344153791915530b67.mockapi.io/api/v1/peces?especie=${especiePez}`)
+  axios.get(urlAPI + '?especie=' + especiePez)
     .then((response) => {
       const { data } = response
 
