@@ -58,28 +58,28 @@ const getPez = (req = request, res = response) => {
 }
 
 /* param para buscar por color */
-const getPezByColor = (req = request, res = response) => {
-  const { colorPez } = req.params
-  console.log(colorPez)
+// const getPezByColor = (req = request, res = response) => {
+//   const { colorPez } = req.params
+//   console.log(colorPez)
 
-  axios.get(`https://66f21a344153791915530b67.mockapi.io/api/v1/peces?color=${colorPez}`)
-    .then((response) => {
-      const { data } = response
+//   axios.get(`https://66f21a344153791915530b67.mockapi.io/api/v1/peces?color=${colorPez}`)
+//     .then((response) => {
+//       const { data } = response
 
-      res.status(200).json({
-        msg: 'Se ha mostrado con exito.',
-        data
-      })
-    })
-    .catch((error) => {
-      console.log(error)
+//       res.status(200).json({
+//         msg: 'Se ha mostrado con exito.',
+//         data
+//       })
+//     })
+//     .catch((error) => {
+//       console.log(error)
 
-      res.status(400).json({
-        msg: 'No se ha podido mostrar.',
-        error: 'Lo siento, no se ha podido buscar ese parametro.'
-      })
-    })
-}
+//       res.status(400).json({
+//         msg: 'No se ha podido mostrar.',
+//         error: 'Lo siento, no se ha podido buscar ese parametro.'
+//       })
+//     })
+// }
 
 /* param para buscar por especie */
 const getPezByEspecie = (req = request, res = response) => {
@@ -155,7 +155,7 @@ const getPezByNombre = (req = request, res = response) => {
 module.exports = {
   getPeces,
   getPez,
-  getPezByColor,
+  // getPezByColor,
   getPezByEspecie,
   getPezByNombre,
   // getPezByID
